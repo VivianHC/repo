@@ -20,3 +20,11 @@ create table classes_info
    class_no             int not null,
    primary key (class_code)
 );
+
+
+create table teacher_course
+(
+   tid                  char(10) not null,
+   cid                  char(20) not null,
+   primary key (tid, cid)
+);
